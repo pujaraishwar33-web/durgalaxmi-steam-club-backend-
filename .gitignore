@@ -1,0 +1,36 @@
+# ── Python ──────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+.eggs/
+.pytest_cache/
+.mypy_cache/
+
+# ── Virtual environments ───────────────────────────────
+venv/
+.venv/
+env/
+
+# ── Django ─────────────────────────────────────────────
+db.sqlite3
+staticfiles/
+
+# User-uploaded media (kept locally only, not committed)
+media/
+
+# ── Environment / secrets ──────────────────────────────
+.env
+
+# ── IDE / OS ───────────────────────────────────────────
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# ── Logs ───────────────────────────────────────────────
+*.log

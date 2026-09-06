@@ -1,0 +1,11 @@
+# Core project dependencies (installed versions in the local venv)
+Django==5.2.17
+djangorestframework==3.17.2
+django-cors-headers==4.9.0
+Pillow==12.3.0
+
+# Deployment dependencies (Render)
+dj-database-url==3.1.2
+gunicorn==26.2.0
+whitenoise==6.12.0
+psycopg2-binary==2.9.12
