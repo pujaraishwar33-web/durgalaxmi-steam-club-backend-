@@ -15,6 +15,12 @@ class GallerySerializer(serializers.ModelSerializer):
 
         try:
             url = obj.image.url
-            return url.replace("http://", "https://")
+
+            # Always use HTTPS for Cloudinary
+            if url.startswith("http://"):
+                url = url.replace("http://", "https://", 1)
+
+            return url
+
         except Exception:
             return None
